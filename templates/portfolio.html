@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexren | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/nav.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="icon" href="/static/nlogo.PNG">
+</head>
+<body>
+<style>
+.btn-primary {
+  position: relative;
+  display: inline-block;
+  color: #e0e0e0;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #61dafb;
+  box-shadow: 0 0 6px #61dafb, 0 0 12px #61dafb;
+  transition: width 0.4s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: #61dafb;
+}
+
+.btn-primary:hover::after,
+.btn-primary:focus::after {
+  width: 100%;
+  /* This makes the underline expand on hover */
+}
+</style>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Nexren</div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/prices">Prices</a></li>
+        <li><a href="/team">Our Team</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio">
+    <h2>Our Work</h2>
+    <p>Explore some of the tools and platforms we've built or contributed to.</p>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="/static/filesmagic.png" alt="FilesMagic Photo" class="port-photo">
+        <h3 style="text-align: center;">FilesMagic</h3>
+        <p>A versatile file converter web app supporting multiple formats and seamless UI.</p>
+        <a href="https://filesmagic.com" class="btn-primary">View Project</a>
+      </div>
+
+      
+
+      <!--ADD MORE BELOW-->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Nexren. All rights reserved.
+  </footer>
+
+</body>
+</html>

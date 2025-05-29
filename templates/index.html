@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexren | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/nav.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="icon" href="/static/nlogo.png">
+
+  <style>
+    #success-box.hidden {
+      display: none;
+    }
+
+#success-box {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  color: #2ecc71;
+  font-size: 1.2rem;
+  font-weight: bold;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #2ecc71;
+  stroke-miterlimit: 10;
+  animation: scale .3s ease-in-out .9s both;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.checkmark-circle {
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  border-radius: 50%;
+  background: #2ecc71;
+}
+
+.checkmark-stem {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: #fff;
+  left: 26px;
+  top: 14px;
+  transform: rotate(45deg);
+  animation: grow .3s ease-out .3s both;
+}
+
+.checkmark-kick {
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  background-color: #fff;
+  left: 20px;
+  top: 24px;
+  transform: rotate(-45deg);
+  animation: grow .3s ease-out .5s both;
+}
+
+@keyframes grow {
+  0% { transform: scaleY(0); }
+  100% { transform: scaleY(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Nexren</div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#services">Services</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/prices">Prices</a></li>
+        <li><a href="/team">Our Team</a></li>
+        <!--<li><a href="/portfolio">Portfolio</a></li>-->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h1>Next-Gen SaaS Solutions</h1>
+    <p>Scalable, secure, and beautifully built software tailored to grow your business.</p>
+    <a href="#contact"><button class="btn-primary" style="font-weight: bold;">Let’s Connect!</button></a>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We specialize in crafting powerful SaaS tools that transform workflows and scale effortlessly.</p>
+    <div class="services">
+      <div class="service">
+        <h3>Custom SaaS Development</h3>
+        <p>Tailored platforms built from the ground up to fit your exact needs.</p>
+      </div>
+      <div class="service">
+        <h3>Web Development</h3>
+        <p>Professional web services including development, maintenance, and ongoing support to ensure your online presence runs smoothly and effectively.</p>
+      </div>
+      <div class="service">
+        <h3>API Integrations</h3>
+        <p>Robust backend integrations to keep your data flowing smoothly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Nexren is a dedicated team of developers, designers, and engineers passionate about building
+       future-proof software solutions that drive business success. We combine cutting-edge technology 
+       with innovative design to deliver scalable, secure, and user-friendly SaaS products 
+       tailored to your unique needs. Whether you're launching your first SaaS product, optimizing 
+       existing workflows, or scaling a complex enterprise system, we partner with you every step 
+       of the way to ensure seamless integration, robust performance, and exceptional user experiences. 
+       Our commitment to quality, agility, and continuous improvement means your software will not only 
+       meet today’s demands but also adapt effortlessly to tomorrow’s challenges.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Ready to launch something great? Drop us a line.</p>
+    <form class="contact-form" id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div id="success-box" class="hidden">
+  <div class="checkmark">
+    <div class="checkmark-circle"></div>
+    <div class="checkmark-stem"></div>
+    <div class="checkmark-kick"></div>
+  </div>
+  <p>Message sent successfully!</p>
+</div>
+
+  </section>
+
+  
+  <!-- Footer -->
+  <footer>
+    © 2025 Nexren. All rights reserved.
+  </footer>
+  <!-- Script -->
+   <script src="/static/js/contact.js"></script>
+
+</body>
+</html>

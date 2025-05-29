@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexren | Testimonials</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/nav.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="icon" href="/static/nlogo.PNG">
+</head>
+<body>
+<style>
+  .btn-primary {
+    position: relative;
+    display: inline-block;
+    color: #e0e0e0;
+    font-weight: 500;
+    text-decoration: none;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+  }
+
+  .btn-primary::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #61dafb;
+    box-shadow: 0 0 6px #61dafb, 0 0 12px #61dafb;
+    transition: width 0.4s ease;
+  }
+
+  .btn-primary:hover, .btn-primary:focus {
+    color: #61dafb;
+  }
+
+  .btn-primary:hover::after,
+  .btn-primary:focus::after {
+    width: 100%;
+  }
+
+  .testimonials {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .testimonial-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 40px;
+  }
+
+  .testimonial-item {
+    background: #1f1f1f;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(97, 218, 251, 0.2);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+  }
+
+  .testimonial-text {
+    font-style: italic;
+    margin-bottom: 16px;
+    color: #ccc;
+    text-align: center;
+  }
+
+  .testimonial-author {
+    font-weight: 600;
+    color: #61dafb;
+    text-align: center;
+  }
+</style>
+
+<!-- Header -->
+<header>
+  <nav>
+    <div class="logo">Nexren</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="/prices">Prices</a></li>
+      <li><a href="/team">Our Team</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Testimonial Section -->
+<section class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <p>We’re proud of the feedback we receive from the people we’ve worked with.</p>
+
+  <div class="testimonial-grid">
+    <div class="testimonial-item">
+      <img src="/static/user1.jpeg" alt="Jordan M." class="testimonial-img">
+      <p class="testimonial-text">"Nexren exceeded our expectations. Their attention to detail and fast delivery made a huge difference for our launch."</p>
+      <p class="testimonial-author">— Jordan M., Startup Founder</p>
+    </div>
+    <div class="testimonial-item">
+      <img src="/static/user3.jpg" alt="Fatima A." class="testimonial-img">
+      <p class="testimonial-text">"Working with Nexren felt like having an in-house dev team. Professional, responsive, and always a step ahead."</p>
+      <p class="testimonial-author">— Fatima A., Project Manager at FinIQ</p>
+    </div>
+    <div class="testimonial-item">
+      <img src="/static/user2.jpg" alt="Leo W." class="testimonial-img">
+      <p class="testimonial-text">"They built a sleek, performant app that’s now critical to our workflow. The user interface alone is worth praising."</p>
+      <p class="testimonial-author">— Leo W., CTO at Synthware</p>
+    </div>
+    <div class="testimonial-item">
+      <img src="/static/user4.jpg" alt="Ayesha K." class="testimonial-img">
+      <p class="testimonial-text">"From discovery to delivery, Nexren made the process seamless. Highly recommended for any SaaS dev project!"</p>
+      <p class="testimonial-author">— Ayesha K., Founder of LearnLoop</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  © 2025 Nexren. All rights reserved.
+</footer>
+
+</body>
+</html>
