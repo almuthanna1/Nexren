@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f1117;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 0 1.5rem;
+  text-align: center;
+  background: linear-gradient(to bottom right, #1c1e27, #0f1117);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #61dafb;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #bbb;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.hero .btn-primary {
+  background: #61dafb;
+  color: #0f1117;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero .btn-primary:hover {
+  background: #21a1f1;
+  box-shadow: 0 0 10px #61dafb99, 0 0 20px #61dafb44;
+}
+
+/* Section Base */
+section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #61dafb;
+  margin-bottom: 1rem;
+}
+
+section p {
+  text-align: center;
+  color: #bbb;
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+/* Services */
+.services {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2rem;
+}
+
+.service {
+  background: #161922;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px #61dafb33, 0 0 25px #61dafb22;
+}
+
+.service h3 {
+  color: #61dafb;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.service p {
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+/* Contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  background: #1d1f29;
+  color: #e0e0e0;
+  resize: vertical;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #61dafb88, 0 0 10px #61dafb44;
+  border: 1px solid #61dafb;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background: #61dafb;
+  color: #0f1117;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.contact-form button:hover {
+  background: #21a1f1;
+  box-shadow: 0 0 10px #61dafb99, 0 0 20px #61dafb44;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #777;
+  background: #0d0f14;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+/* Pricing Section */
+.pricing {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(to bottom right, #0f1117, #1c1e27);
+  color: #e0e0e0;
+}
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card.glass {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 300px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card.glass:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 50px rgba(0, 255, 255, 0.1);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: #61dafb;
+  margin-bottom: 1rem;
+}
+
+.card .price {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.card .price span {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.card ul li::before {
+  content: "✓";
+  color: #61dafb;
+  margin-right: 0.5rem;
+}
+
+.card button {
+  margin-top: 1rem;
+  background: #61dafb;
+  color: #0f1117;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.card button:hover {
+  background: #21a1f1;
+  box-shadow: 0 0 10px #61dafb99, 0 0 20px #61dafb44;
+}
+
+
+/* Team Section */
+.team, .portfolio {
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.team-members, .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 960px) {
+  .team-members {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.member-card, .portfolio-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 300px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.team-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.portfolio-item .btn-primary {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+
+.port-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}

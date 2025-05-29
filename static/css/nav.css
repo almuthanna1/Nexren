@@ -1,0 +1,86 @@
+/* Reset Navigation Defaults */
+nav, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Fixed Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(15, 17, 23, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+}
+
+/* Navigation Bar */
+nav {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #61dafb;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  position: relative;
+  display: inline-block;
+  color: #e0e0e0;
+  font-weight: 500;
+  padding-bottom: 4px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #61dafb;
+  box-shadow: 0 0 6px #61dafb, 0 0 12px #61dafb;
+  transition: width 0.4s ease;
+}
+
+.nav-links li a:hover {
+  color: #61dafb;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Responsive Option (Optional) */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    background: rgba(15,17,23,0.95);
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 1.5rem;
+    border-radius: 12px;
+    display: none; /* You can toggle this with JS for a hamburger */
+  }
+}
